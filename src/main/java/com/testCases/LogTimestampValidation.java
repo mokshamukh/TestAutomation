@@ -32,9 +32,11 @@ public class LogTimestampValidation {
 	@Test
 	public void test() throws Exception
 	{
-		
+		//read file and add the details to DB table
 		FileProcessor.readTxtFile("src/main/resources/com/files/logfile.txt");
+		//perform calculations on logs for finding the duration and Flag any long events that take longer than 4ms
 		ValidationFunctions.updateAlertField();
+		//print log details  whose duration is more than 4
 		ValidationFunctions.getLogDetailsofAlertID();
 		
 	}

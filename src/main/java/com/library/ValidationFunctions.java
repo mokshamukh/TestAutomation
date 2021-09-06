@@ -5,6 +5,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ValidationFunctions extends DatabaseProcessor{
+	/** update the ALERT table - if duration is more than 4 then update alert column to true else false
+	 * @throws SQLException
+	 */
 	public static void updateAlertField() throws SQLException {
 		
 		statement = sqliteConnection.createStatement();
@@ -45,6 +48,9 @@ public class ValidationFunctions extends DatabaseProcessor{
 		rs.close();
 	}
 	
+	/** printing the log details of ID whose duration is more than 4 on Console 
+	 * @throws SQLException
+	 */
 	public static void getLogDetailsofAlertID() throws SQLException {
 		String strAlertLogDatasql = "Select ID,DURATION,TYPE,HOST from ALERT_LOG_TBL where ALERT='true'";
 		ResultSet rs = statement.executeQuery(strAlertLogDatasql);

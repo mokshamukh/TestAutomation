@@ -34,31 +34,6 @@ public class FileProcessor {
 	 * @throws Exception
 	 */
 	public static  void readTxtFile(String filename) throws IOException, Exception {
-		/*String json = "";
-		BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\asus\\Desktop\\logfile.txt"));
-		//BufferedReader reader = new BufferedReader(new FileReader(filename));
-		try {
-
-			StringBuilder sb = new StringBuilder();
-			String line = reader.readLine();
-
-			while (line != null) {
-				sb.append(line);
-				sb.append(",\n");
-				line = reader.readLine();
-			}
-			json = sb.toString();
-			StringBuffer sb1= new StringBuffer(json);  
-			sb1.deleteCharAt(sb1.length()-1);  
-			json="["+sb+"]";
-
-		} finally {
-			reader.close();
-		}*/
-
-		//filename = "src/main/resources/com/files/logfile.txt";
-		
-		
 		
 		File file = new File(filename);
 		if (!file.exists()) {
@@ -85,6 +60,11 @@ public class FileProcessor {
 	}
 
 
+	/** covert line data from file to json format and insert these values to tabble
+	 * @param jsonData
+	 * @throws IOException
+	 * @throws Exception
+	 */
 	public static void covertToJsonAndAddToDB(String jsonData) throws IOException, Exception {
 		//String jsonData = readTxtFile(filename);
 		String strColumns ="", strColumnVal ="";
