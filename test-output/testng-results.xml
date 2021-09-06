@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="151" started-at="2021-09-06T08:18:15Z" finished-at="2021-09-06T08:18:15Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="151" started-at="2021-09-06T08:18:15Z" finished-at="2021-09-06T08:18:15Z">
+      <class name="com.testCases.LogTimestampValidation">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.testCases.LogTimestampValidation@6a2bcfcb]" name="beforeSuite" is-config="true" duration-ms="212" started-at="2021-09-06T13:48:14Z" finished-at="2021-09-06T13:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.testCases.LogTimestampValidation@6a2bcfcb]" name="beforeTest" is-config="true" duration-ms="1" started-at="2021-09-06T13:48:15Z" finished-at="2021-09-06T13:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.testCases.LogTimestampValidation@6a2bcfcb]" name="test" duration-ms="127" started-at="2021-09-06T13:48:15Z" finished-at="2021-09-06T13:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.testCases.LogTimestampValidation@6a2bcfcb]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-09-06T13:48:15Z" finished-at="2021-09-06T13:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSUite()[pri:0, instance:com.testCases.LogTimestampValidation@6a2bcfcb]" name="afterSUite" is-config="true" duration-ms="1" started-at="2021-09-06T13:48:15Z" finished-at="2021-09-06T13:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSUite -->
+      </class> <!-- com.testCases.LogTimestampValidation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
